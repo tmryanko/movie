@@ -1,0 +1,29 @@
+$primary-color: white;
+
+
+html, body
+  margin: 0
+  height: 100%
+  
+#root
+  height: 100%
+
+.appContainer
+  display: flex
+  flex-direction: column
+  background: $primary-color
+.appNav
+  display: flex
+  order: 1
+.appItems
+  display: flex
+  order: 2
+  justify-content: center
+  background-color: #e7ebef
+  
+@media screen and (max-width: 1024px) 
+  .appItems 
+    background-color: green
+    
+    
+  
