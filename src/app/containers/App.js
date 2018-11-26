@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as BaseActions from '../actions/BaseActions';
 import * as MoviesActions from '../actions/MoviesActions';
 import MovieList from '../components/MovieList';
 import UpperList from '../components/UpperList';
@@ -92,7 +91,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators({ ...BaseActions, ...MoviesActions }, dispatch)
+    actions: bindActionCreators({  ...MoviesActions }, dispatch)
   };
 };
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as BaseActions from '../actions/BaseActions';
 import * as MoviesActions from '../actions/MoviesActions';
 import MovieItem from './MovieItem';
 import TrailerModal from './TrailerModal';
@@ -82,7 +81,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators({ ...BaseActions, ...MoviesActions }, dispatch)
+    actions: bindActionCreators({  ...MoviesActions }, dispatch)
   };
 };
 

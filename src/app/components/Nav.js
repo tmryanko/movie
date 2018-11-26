@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import AddMovieModal from '../components/AddMovieModal';
-import * as BaseActions from '../actions/BaseActions';
 import * as MoviesActions from '../actions/MoviesActions';
 
 import '../style/nav.sass';
@@ -72,7 +71,7 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators({ ...BaseActions, ...MoviesActions }, dispatch)
+    actions: bindActionCreators({  ...MoviesActions }, dispatch)
   };
 };
 
