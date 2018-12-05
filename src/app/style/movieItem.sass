@@ -1,23 +1,66 @@
 @media screen and (max-width: 1024px) 
   .imgItemBottom 
-    background-color: green
-    flex-grow: 2
+    display: flex
+    height: 800px
+    width: 960px 
+    font-size: 45px
+    font-family: serif   
+@media screen and (min-width: 1024px) 
+  .imgItemBottom 
+    display: flex
+    height: 300px
+    width: 300px 
+@media screen and (min-width: 1024px) 
+  .imgItem
+    height: 200px
+    width: 200px
+  .favoritesButton
+      height: 35px
+      width: 35px  
+      bottom: 90px
+      right: -18px
+  .playButton
+      height: 35px
+      width: 35px
+      bottom: 50px
+      right: -18px
+  .ratingBox 
+      height: 35px
+      width: 35px 
+      right: -18px
+@media screen and (max-width: 1024px) 
+  .imgItem
+    height: 600px
+    width: 600px
+  .favoritesButton
+    height: 80px
+    width: 80px
+    bottom: 190px
+    right: -39px
+  .playButton
+    height: 80px
+    width: 80px
+    bottom: 100px
+    right: -39px
+  .ratingBox 
+    height: 80px
+    width: 80px 
+    right: -39px
 .imgItemBottom
     display: flex
     flex-direction: column
     justify-content: space-evenly
-    height: 300px
-    width: 300px 
     border: 1px solid black
     border-radius: 3%
     align-items: center
-    margin-bottom: 2px
+    margin-bottom: 13px
+    font-family: serif
+    transform: scaleX(1.01)
+.imgItemBottom:hover
+    transform: scaleX(1)
 .imgBox
     position: relative 
-    
 .imgItem
-    height: 200px
-    width: 200px 
     border-radius: 6% 
 .favoritesButton
     display: flex
@@ -25,33 +68,32 @@
     justify-content: center
     align-items: center
     background-image: url(./img/favourites.png)
+    background-size: 100%
     background-repeat: no-repeat
+    border: none
     border-radius: 50%
-    height: 35px
-    width: 35px
-    bottom: 90px
-    right: -18px
+.favoritesButton:hover
+    transform: scaleX(1.05)
 .playButton
     display: flex
+    background-size: 100%
+    background-color: black
     position: absolute
     justify-content: center
     align-items: center
     background-image: url(./img/play-button.png)
     background-repeat: no-repeat
     border-radius: 50%
-    height: 35px
-    width: 35px
-    bottom: 50px
-    right: -18px
+.playButton:hover
+    transform: scaleX(1.05)
 .ratingBox
+    font-size: 13px
+    background-size: 100%
     display: flex
     position: absolute
     justify-content: center
     align-items: center
-    height: 35px
-    width: 35px
     bottom: 10px
-    right: -18px
     background-image: url(./img/dry.png)
     background-repeat: no-repeat
 .rating

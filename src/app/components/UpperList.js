@@ -35,7 +35,7 @@ export default class UpperList extends Component {
       const path = `https://image.tmdb.org/t/p/w500/${item.poster_path}`;
                 
       return (
-        <div className="imgItemTop" key={ item.id }><img className="imgItem" src={ path } alt=""/></div> 
+        <div className="imgItemTopCont" key={ item.id }><img className="imgItemTop" src={ path } alt=""/></div> 
            
       );
     });
